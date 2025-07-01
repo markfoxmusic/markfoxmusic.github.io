@@ -2,89 +2,136 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mark Fox - Film Composer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Official site of Mark Fox, film composer known for Wasterville, Death Molester: Barn of Blood, Skullcracker and more." />
+  <title>Mark Fox | Film Composer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-      background: #f9f9f9;
-      color: #333;
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #111;
+      color: #fff;
     }
     header {
+      background-color: #000;
       text-align: center;
-      margin-bottom: 40px;
+      padding: 2rem;
     }
     header h1 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2.5rem;
       margin: 0;
-      font-size: 2.5em;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      background-color: #222;
+      padding: 1rem 0;
     }
     nav a {
-      margin: 0 15px;
-      color: #007acc;
+      color: #f25;
       text-decoration: none;
       font-weight: bold;
     }
-    nav a:hover {
-      text-decoration: underline;
+    .section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
     }
-    section {
-      margin-bottom: 40px;
+    .gallery img {
+      width: 100%;
+      max-width: 250px;
+      margin: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(255, 0, 60, 0.5);
     }
-    h2 {
-      border-bottom: 2px solid #007acc;
-      padding-bottom: 5px;
+    .video-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .video-links a {
+      display: block;
+      max-width: 320px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 12px rgba(255, 0, 60, 0.5);
+      text-decoration: none;
+      color: #fff;
+      transition: transform 0.3s ease;
+    }
+    .video-links a:hover {
+      transform: scale(1.05);
+    }
+    .video-links img {
+      width: 100%;
+      display: block;
     }
     footer {
       text-align: center;
-      font-size: 0.9em;
-      color: #777;
-      border-top: 1px solid #ddd;
-      padding-top: 15px;
+      padding: 2rem;
+      background-color: #000;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Mark Fox</h1>
-    <p>Film Composer | Horror Score Specialist</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#scores">Scores</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <p>Film Composer • Sound Designer • Horror Aficionado</p>
   </header>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am Mark Fox, a dedicated film composer specializing in creating atmospheric and gripping scores
-      for horror and indie films. My work includes the chilling soundtracks for films such as <strong>Wasterville</strong>, 
-      <strong>Death Molester Barn of Blood</strong>, and ongoing projects like <em>Skullcracker</em>, <em>Amityville Trailer Park</em>, and <em>Death Receipt</em>.
-    </p>
-    <p>
-      With a deep understanding of mood, tension, and storytelling through music, I aim to elevate every film project I contribute to. 
-      My compositions have been praised for their immersive qualities and unique blend of traditional and experimental elements.
-    </p>
+  <nav>
+    <a href="#projects">Projects</a>
+    <a href="#videos">Trailers</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  
+  <section class="section" id="projects">
+    <h2>Recent Film Scores</h2>
+    <div class="gallery">
+      <img src="https://i.postimg.cc/m19pzqRq/FB-IMG-1751332918587.jpg" alt="Wasterville" />
+      <img src="https://i.postimg.cc/2qHKPh2H/FB-IMG-1751332953813.jpg" alt="Skullcracker" />
+      <img src="https://i.postimg.cc/KRXHSZDy/FB-IMG-1751333028514.jpg" alt="Death Molester" />
+      <img src="https://i.postimg.cc/w12fmD86/FB-IMG-1751333050736.jpg" alt="The Shocking Truth" />
+    </div>
   </section>
 
-  <section id="scores">
-    <h2>Film Scores</h2>
-    <ul>
-      <li><strong>Wasterville</strong> — Atmospheric horror score enhancing the eerie mood and tension.</li>
-      <li><strong>Death Molester Barn of Blood</strong> — A dark, unsettling soundtrack matching the film’s raw intensity.</li>
-      <li><strong>Skullcracker</strong> — Currently in production, promising a mix of aggressive and haunting themes.</li>
-      <li><strong>Amityville Trailer Park</strong> — A fresh take on horror scoring with experimental sound design.</li>
-      <li><strong>Death Receipt</strong> — Upcoming project focusing on minimalist suspense music.</li>
-    </ul>
+  <section class="section" id="videos">
+    <h2>Watch & Listen</h2>
+    <div class="video-links">
+      <a href="https://youtu.be/G38YKnPVqqQ" target="_blank" rel="noopener noreferrer" aria-label="Death Molester Trailer">
+        <img src="https://img.youtube.com/vi/G38YKnPVqqQ/0.jpg" alt="Death Molester Trailer Thumbnail" />
+      </a>
+      <a href="https://youtu.be/C4wim2uxuJE" target="_blank" rel="noopener noreferrer" aria-label="Skullcracker Trailer">
+        <img src="https://img.youtube.com/vi/C4wim2uxuJE/0.jpg" alt="Skullcracker Trailer Thumbnail" />
+      </a>
+      <a href="https://youtu.be/4n9rIiPJD_k" target="_blank" rel="noopener noreferrer" aria-label="Wasterville Trailer">
+        <img src="https://img.youtube.com/vi/4n9rIiPJD_k/0.jpg" alt="Wasterville Trailer Thumbnail" />
+      </a>
+      <a href="https://youtu.be/ec_TLBn6V1g" target="_blank" rel="noopener noreferrer" aria-label="Shocking Truth Vinyl Unboxing">
+        <img src="https://img.youtube.com/vi/ec_TLBn6V1g/0.jpg" alt="Shocking Truth Vinyl Unboxing Thumbnail" />
+      </a>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
+  <section class="section" id="about">
+    <h2>About Mark</h2>
+    <p>Mark Fox is a UK-based composer best known for his work in horror and underground cinema. His music has featured in films such as <strong>Wasterville</strong>, <strong>Skullcracker</strong>, <strong>Death Molester: Barn of Blood</strong>, and <strong>The Shocking Truth</strong>. His soundtrack work includes releases with Scare Flair Records and theatrical screenings via Grindhouse Releasing. Mark’s work has been mentioned in media such as <a href="https://desperate-living.com/2019/03/04/saw-sounds-reinventing-the-texas-chain-saw-massacre-soundtrack/" target="_blank" rel="noopener noreferrer">Desperate Living</a> and <a href="https://dailydead.com/horror-highlights-scum-of-the-earth-iconic-all-alone-together-recluse/" target="_blank" rel="noopener noreferrer">Daily Dead</a>.</p>
+    <p>He is currently working on new projects including <em>Amityville Trailer Park</em> and <em>Death Receipt</em>.</p>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Connect</h2>
+    <p>Email: <a href="mailto:officialmarkfoxmusic@gmail.com">officialmarkfoxmusic@gmail.com</a></p>
     <p>
-      Interested in working together or learning more? Reach out to me at: <a href="mailto:your.email@example.com">your.email@example.com</a>
+      <a href="https://instagram.com/mark_fox_music" target="_blank" rel="noopener noreferrer">Instagram</a> |
+      <a href="https://www.facebook.com/share/19iEXWeAWv/" target="_blank" rel="noopener noreferrer">Facebook</a> |
+      <a href="https://www.imdb.com/name/nm2497602/" target="_blank" rel="noopener noreferrer">IMDb</a> |
+      <a href="https://youtube.com/@mark_fox_music" target="_blank" rel="noopener noreferrer">YouTube</a>
     </p>
   </section>
 
