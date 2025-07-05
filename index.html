@@ -44,8 +44,6 @@
       margin: 0;
       padding: 0;
     }
-    nav ul li {
-    }
     nav ul li a {
       color: #ccc;
       text-decoration: none;
@@ -106,8 +104,7 @@
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.7);
     }
-    .video-container iframe,
-    .video-container video {
+    .video-container iframe {
       position: absolute;
       top: 0; left: 0;
       width: 100%; height: 100%;
@@ -158,6 +155,18 @@
       background: #17a844;
       outline: none;
     }
+
+    /* Purple color for external links */
+    a[target="_blank"] {
+      color: #9b59b6; /* purple */
+      text-decoration: underline;
+    }
+    a[target="_blank"]:hover,
+    a[target="_blank"]:focus {
+      color: #7d3c98;
+      text-decoration: none;
+      outline: none;
+    }
   </style>
 </head>
 <body>
@@ -195,32 +204,56 @@
         <li><strong>Moose Knuckle</strong> – dir Shane Grant</li>
         <li><strong>Ace of Wands Tarot DVD</strong> – Ace of Wands event (March 2025)</li>
       </ul>
+
       <div class="posters">
-        <img src="https://i.postimg.cc/m19pzqRq/FB-IMG-1751332918587.jpg" alt="Wasterville poster" />
-        <img src="https://i.postimg.cc/2qHKPh2H/FB-IMG-1751332953813.jpg" alt="Skullcracker poster" />
-        <img src="https://i.postimg.cc/KRXHSZDy/FB-IMG-1751333028514.jpg" alt="Death Molesters Barn of Blood poster" />
-        <img src="https://i.postimg.cc/w12fmD86/FB-IMG-1751333050736.jpg" alt="Shocking Truth poster" />
+        <!-- Posters matched correctly -->
+        <img src="https://i.postimg.cc/m19pzqRq/FB-IMG-1751332918587.jpg" alt="Wasterville poster" title="Wasterville" data-trailer="wasterville-trailer" />
+        <img src="https://i.postimg.cc/2qHKPh2H/FB-IMG-1751332953813.jpg" alt="Skullcracker poster" title="Skullcracker" data-trailer="skullcracker-trailer" />
+        <img src="https://i.postimg.cc/KRXHSZDy/FB-IMG-1751332884856.jpg" alt="Death Receipt poster" title="Death Receipt" data-trailer="deathreceipt-trailer" />
+        <img src="https://i.postimg.cc/mDkgz0Dk/FB-IMG-1751332940680.jpg" alt="The Death Molesters Barn of Blood poster" title="The Death Molesters Barn of Blood" data-trailer="deathmolesters-trailer" />
+        <img src="https://i.postimg.cc/fRTNccmW/FB-IMG-1751332959047.jpg" alt="Moose Knuckle poster" title="Moose Knuckle" data-trailer="mooseknuckle-trailer" />
+        <img src="https://i.postimg.cc/7hY82ZgR/FB-IMG-1751332945443.jpg" alt="Ace of Wands Tarot DVD poster" title="Ace of Wands Tarot DVD" data-trailer="aceofwands-trailer" />
       </div>
     </section>
 
     <section id="videos">
       <h2>Videos</h2>
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/4n9rIiPJD_k" title="Wasterville Trailer" allowfullscreen></iframe>
+
+      <div id="video-wrapper">
+        <!-- Default trailer or empty -->
+        <div class="video-container" id="video-player">
+          <iframe src="https://www.youtube.com/embed/1-GBbLMWeEg" title="Wasterville Trailer" allowfullscreen></iframe>
+        </div>
       </div>
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/C4wim2uxuJE" title="Skullcracker Trailer" allowfullscreen></iframe>
-      </div>
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/G38YKnPVqqQ" title="Death Molesters Barn of Blood Trailer" allowfullscreen></iframe>
-      </div>
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/ec_TLBn6V1g" title="Shocking Truth Vinyl Review" allowfullscreen></iframe>
-      </div>
+
+      <script>
+        // Trailer URLs by ID
+        const trailers = {
+          "wasterville-trailer": "https://www.youtube.com/embed/1-GBbLMWeEg",
+          "skullcracker-trailer": "https://www.youtube.com/embed/_fuFY3JLO0I",
+          "deathreceipt-trailer": "https://www.youtube.com/embed/sbd_p94LyUA",
+          "deathmolesters-trailer": "https://www.youtube.com/embed/pddPXj-dZmY",
+          "mooseknuckle-trailer": "https://www.youtube.com/embed/xf6XUvWTPmc",
+          "aceofwands-trailer": "https://www.youtube.com/embed/tjtpLoH5rUQ"
+        };
+
+        const videoPlayer = document.getElementById('video-player');
+        const posters = document.querySelectorAll('.posters img');
+
+        posters.forEach(poster => {
+          poster.addEventListener('click', () => {
+            const trailerId = poster.getAttribute('data-trailer');
+            const trailerURL = trailers[trailerId];
+            if(trailerURL){
+              videoPlayer.innerHTML = `<iframe src="${trailerURL}" title="${poster.title} Trailer" allowfullscreen></iframe>`;
+              // Scroll to video on click
+              videoPlayer.scrollIntoView({behavior: 'smooth'});
+            }
+          });
+        });
+      </script>
     </section>
 
     <section id="press">
-      <h2>Press & Reviews</h2>
-      <ul>
-        <li><a href="https://rue-morgue.com/scum-of-the-earth-restoration-and-the-death-molesters-barn-of-blood-set-canadian-u-s-premieres-and-more-poster-trailers/" target="_blank" rel="noopener noreferrer">Rue Morgue – Death Molesters Barn of Blood Canadian/U.S. Premiere</a></li>
-        <li><a href="https://desperate-living.com/2019/03/04/saw-sounds-reinventing-the-texas-chain-saw-massacre-soundtrack/" target="_blank" rel
+      <h2>Press</h2>
+      <p>No current
