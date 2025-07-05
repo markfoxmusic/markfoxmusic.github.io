@@ -3,132 +3,113 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mark Fox – Film Composer & Multi-Instrumentalist</title>
-  <meta name="description" content="Mark Fox is a UK-based film composer creating cinematic, handcrafted horror and experimental scores. Multi-instrumentalist and sound innovator." />
-  <meta name="keywords" content="Mark Fox, film composer, horror film music, cinematic composer, multi-instrumentalist, Death Molester, Wasterville, Texas Chainsaw Massacre soundtrack" />
+  <title>Mark Fox – Film Composer & Sound Innovator</title>
+  <meta name="description" content="Mark Fox is a UK-based film composer & multi-instrumentalist, crafting cinematic horror scores for cult and genre films. In-house composer at Redclaw Media." />
+  <meta name="keywords" content="Mark Fox composer, horror film music, cinematic scores, Redclaw Media composer, Moose Knuckle, Death Molester, Texas Chainsaw Massacre soundtrack" />
   <meta name="author" content="Mark Fox" />
   
-  <!-- Open Graph / Facebook -->
-  <meta property="og:title" content="Mark Fox – Film Composer & Multi-Instrumentalist" />
-  <meta property="og:description" content="Cinematic Sound. Handcrafted Horror. Explore the work of Mark Fox, UK film composer and sound innovator." />
-  <meta property="og:type" content="website" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mark Fox – Film Composer & Sound Innovator" />
+  <meta property="og:description" content="Cinematic Sound. Handcrafted Horror." />
   <meta property="og:url" content="https://markfoxcomposer.com" />
   <meta property="og:image" content="https://markfoxcomposer.com/images/markfox-profile.jpg" />
-  
+  <meta property="og:type" content="website" />
+
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Mark Fox – Film Composer & Multi-Instrumentalist" />
-  <meta name="twitter:description" content="Cinematic Sound. Handcrafted Horror. Explore the work of Mark Fox, UK film composer and sound innovator." />
+  <meta name="twitter:title" content="Mark Fox – Film Composer & Sound Innovator" />
+  <meta name="twitter:description" content="Cinematic Sound. Handcrafted Horror." />
   <meta name="twitter:image" content="https://markfoxcomposer.com/images/markfox-profile.jpg" />
-  
+
   <style>
-    /* Reset and base */
-    body, html {
-      margin: 0; padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding-top: 80px;
+      font-family: Arial, sans-serif;
       background: #121212;
       color: #eee;
       scroll-behavior: smooth;
-      line-height: 1.6;
     }
-    a {
-      color: #FF5C00;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+    a { color: #FF5C00; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
     header {
-      background: #1f1f1f;
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      z-index: 1000;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0.8rem 2rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+      position: fixed; top:0; width:100%; height:80px;
+      background:#1f1f1f; display:flex;
+      align-items:center; justify-content:space-between;
+      padding:0 2rem; z-index:1000;
+      box-shadow:0 2px 8px rgba(0,0,0,0.7);
     }
-    nav ul {
-      list-style: none;
-      margin: 0; padding: 0;
-      display: flex;
-      gap: 1.5rem;
+    header h1 { margin:0; color:#f5a623; font-size:1.5rem; font-weight:700; }
+    nav { display:flex; gap:1.5rem; }
+    nav a {
+      padding:0.5rem 1rem;
+      border-radius:4px;
+      font-weight:600;
+      transition:background-color .3s;
     }
-    nav ul li {
-      font-weight: 600;
-      font-size: 1rem;
-    }
-    nav ul li a {
-      padding: 0.3rem 0.6rem;
-      border-radius: 3px;
-      transition: background-color 0.3s ease;
-    }
-    nav ul li a:hover {
-      background-color: #FF5C00;
-      color: #121212;
-    }
+    nav a:hover { background:#f5a623; color:#121212; }
+
     .container {
-      max-width: 960px;
-      margin: 6rem auto 3rem; /* space below fixed header */
-      padding: 0 1.2rem;
-    }
-    h1 {
-      font-size: 2.8rem;
-      margin-bottom: 0.2rem;
-      color: #FF5C00;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: 2px;
+      max-width:960px;
+      margin:0 auto;
+      padding:2rem 1rem;
     }
     .tagline {
-      font-style: italic;
-      font-weight: 600;
-      margin-bottom: 2rem;
-      color: #ff8c42;
+      text-align:center;
+      font-style:italic;
+      font-weight:600;
+      color:#ff8c42;
+      margin-bottom:2rem;
     }
-    section {
-      margin-bottom: 4rem;
-    }
+    section { margin-bottom:4rem; }
     h2 {
-      font-size: 2rem;
-      border-bottom: 2px solid #FF5C00;
-      padding-bottom: 0.3rem;
-      margin-bottom: 1rem;
-      font-weight: 700;
+      font-size:2rem;
+      color:#f5a623;
+      border-bottom:2px solid #f5a623;
+      padding-bottom:0.3rem;
+      margin-bottom:1rem;
     }
-    p, li {
-      font-size: 1rem;
-      margin-bottom: 1rem;
-      color: #ddd;
+    .gallery img {
+      max-width:200px;
+      width:100%;
+      margin:0.5rem;
+      border-radius:8px;
+      box-shadow:0 0 12px rgba(255,89,0,0.5);
     }
-    ul {
-      padding-left: 1.2rem;
+    .video-links {
+      display:flex; flex-wrap:wrap; gap:1rem;
+      justify-content:center;
     }
-    .press-embed iframe {
-      width: 100%;
-      height: 320px;
-      border: none;
-      margin-top: 1rem;
-      border-radius: 8px;
+    .video-links a img {
+      max-width:320px;
+      width:100%;
+      border-radius:8px;
+      box-shadow:0 0 12px rgba(255,89,0,0.5);
+      transition:transform .3s;
+    }
+    .video-links a:hover img { transform:scale(1.03); }
+
+    .press a {
+      display:block;
+      margin-bottom:1rem;
+      color:#1e90ff;
+    }
+    .live-list li {
+      margin-bottom:0.5rem;
     }
     footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #666;
-      border-top: 1px solid #333;
-      margin-top: 4rem;
+      text-align:center;
+      padding:2rem;
+      font-size:0.9rem;
+      color:#666;
+      border-top:1px solid #333;
     }
-    /* Responsive */
-    @media (max-width: 600px) {
-      nav ul {
-        flex-direction: column;
-        gap: 0.8rem;
-      }
-      h1 {
-        font-size: 2rem;
-      }
+
+    @media(max-width:600px){
+      nav { flex-wrap:wrap; justify-content:center; }
+      body { padding-top:100px; }
     }
   </style>
 </head>
@@ -136,58 +117,81 @@
   <header>
     <h1>Mark Fox</h1>
     <nav>
-      <ul>
-        <li><a href="#bio">Bio</a></li>
-        <li><a href="#scores">Film Scores</a></li>
-        <li><a href="#press">Press</a></li>
-        <li><a href="#videos">Videos</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <a href="#scores">Scores</a>
+      <a href="#videos">Videos</a>
+      <a href="#press">Press</a>
+      <a href="#live">Live</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <main class="container">
+  <div class="container">
     <p class="tagline">Cinematic Sound. Handcrafted Horror.</p>
 
-    <section id="bio">
-      <h2>Biography</h2>
-      <p><strong>Mark Fox</strong> is a UK-based film composer known for crafting emotionally resonant and sonically rich scores that elevate storytelling across genres. With a rare ability to blend orchestral depth, electronic sophistication, and experimental edge, Mark brings a unique, cinematic voice to every project he works on.</p>
-      <p>Trained at Dartington under avant-garde pioneers Edward Cowie and Frank Denyer, Mark has a deep-rooted understanding of contemporary orchestral techniques, which he seamlessly fuses with modern and global musical traditions. His score for <em>The Texas Chainsaw Massacre: The Shocking Truth</em> established his reputation for creating immersive, boundary-pushing soundscapes—yet his creative range extends far beyond the experimental.</p>
-      <p>Mark’s versatility spans orchestral, electronic, and ambient styles, with many of his electronic works drawing comparisons to cult European cinema scores of the 1970s. A skilled multi-instrumentalist, he personally performs all instrumental parts—ranging from bass, guitar, and synths to keyboards and rhythmic textures—ensuring a cohesive and nuanced sonic identity in every cue.</p>
-      <p>What truly sets Mark apart is his hands-on, artisanal approach to sound creation. He designs and builds his own instruments and custom effects units—including reverbs, oscillators, and microphones—crafted specifically for the emotional and thematic demands of each project. His music often incorporates ancient techniques and instruments from diverse global traditions, reflecting a deep respect for the cultural and spiritual origins of sound.</p>
-      <p>Whether scoring psychological thrillers, art-house films, documentaries, or genre cinema, Mark Fox delivers bold, original music that directors and producers trust to bring their vision to life. His precision, creativity, and collaborative mindset make him not just a composer, but a vital storytelling partner.</p>
-    </section>
-
     <section id="scores">
-      <h2>Film Scores</h2>
-      <ul>
-        <li><strong>The Texas Chainsaw Massacre: The Shocking Truth</strong></li>
-        <li><strong>Death Molester’s Barn of Blood</strong></li>
-        <li><strong>Wasterville</strong></li>
-        <li><strong>Skullcracker</strong></li>
-        <li><strong>Moose Knuckle</strong> (Dir. Shane Grant, 2025)</li>
-        <li><strong>Amityville Trailer Park</strong></li>
-        <li><strong>Death Receipt</strong></li>
-      </ul>
-      <p>Mark is currently the in-house composer for Redclaw Media.</p>
-    </section>
-
-    <section id="press">
-      <h2>Press & Reviews</h2>
-      <ul>
-        <li><a href="https://rue-morgue.com/scum-of-the-earth-restoration-and-the-death-molesters-barn-of-blood-set-canadian-u-s-premieres-and-more-poster-trailers/" target="_blank" rel="noopener noreferrer">Rue Morgue Magazine – Death Molester’s Barn of Blood Canadian Premiere</a></li>
-        <li><a href="https://desperate-living.com/2019/03/04/saw-sounds-reinventing-the-texas-chain-saw-massacre-soundtrack/" target="_blank" rel="noopener noreferrer">Desperate Living – Saw Sounds: Texas Chainsaw Massacre Soundtrack</a></li>
-        <li><a href="https://grindhousereleasing.com/canada-premiere-scum-of-the-earth-and-the-death-molesters-barn-of-blood/" target="_blank" rel="noopener noreferrer">Grindhouse Releasing – Canadian Premiere</a></li>
-        <li><a href="https://dailydead.com/horror-highlights-scum-of-the-earth-iconic-all-alone-together-recluse/" target="_blank" rel="noopener noreferrer">Daily Dead – Horror Highlights</a></li>
-      </ul>
-      <div class="press-embed">
-        <iframe src="https://www.youtube.com/embed/TODO_Splattered_Plastic_Review_VideoID" title="Splattered Plastic Review" allowfullscreen></iframe>
+      <h2>Film & Special Projects</h2>
+      <div class="gallery">
+        <img src="https://i.postimg.cc/m19pzqRq/FB-IMG-1751332918587.jpg" alt="Wasterville poster">
+        <img src="https://i.postimg.cc/2qHKPh2H/FB-IMG-1751332953813.jpg" alt="Skullcracker poster">
+        <img src="https://i.postimg.cc/KRXHSZDy/FB-IMG-1751333028514.jpg" alt="Death Molesters Barn of Blood poster">
+        <img src="https://i.postimg.cc/w12fmD86/FB-IMG-1751333050736.jpg" alt="Death Receipt poster">
       </div>
+      <ul>
+        <li><strong>Wasterville</strong> – Dir. Christopher Haase (post-production)</li>
+        <li><strong>Skullcracker</strong> – Dir. Rich Scarano</li>
+        <li><strong>Death Receipt</strong> – Dir. Christopher Haase</li>
+        <li><strong>The Death Molesters: Barn of Blood</strong> – Dir. Matt Enos (2025)</li>
+        <li><strong>Moose Knuckle</strong> – Dir. Shane Grant (In-house composer, Redclaw Media)</li>
+      </ul>
+      <p><em>In-house composer for Redclaw Media.</em></p>
+      <p><strong>Special Project:</strong> Composed music for <em>Ace of Wands Tarot DVD</em> at Derby QUAD, March 2025.</p>
     </section>
 
     <section id="videos">
       <h2>Videos & Trailers</h2>
-      <ul>
-        <li><a href="https://youtu.be/G38YKnPVqqQ" target="_blank" rel="noopener noreferrer">Death Molester’s Barn of Blood Trailer</a></li>
-        <li><a href="https://youtu.be/C4wim2uxuJE" target="_blank" rel="noopener noreferrer">Skullcracker Trailer</a></li>
-        <li><a href="https://youtu.be/4n9rIiPJD_k" target="_blank" rel="
+      <div class="video-links">
+        <a href="https://youtu.be/G38YKnPVqqQ" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.youtube.com/vi/G38YKnPVqqQ/0.jpg" alt="Death Molester trailer">
+        </a>
+        <a href="https://youtu.be/C4wim2uxuJE" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.youtube.com/vi/C4wim2uxuJE/0.jpg" alt="Skullcracker trailer">
+        </a>
+        <a href="https://youtu.be/4n9rIiPJD_k" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.youtube.com/vi/4n9rIiPJD_k/0.jpg" alt="Wasterville trailer">
+        </a>
+        <a href="https://youtu.be/ec_TLBn6V1g" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.youtube.com/vi/ec_TLBn6V1g/0.jpg" alt="The Shocking Truth vinyl review">
+        </a>
+      </div>
+    </section>
+
+    <section id="press">
+      <h2>Press & Reviews</h2>
+      <a href="https://rue-morgue.com/scum-of-the-earth-restoration-and-the-death-molesters-barn-of-blood-set-canadian-u-s-premieres-and-more-poster-trailers/" target="_blank">Rue Morgue – Death Molesters’ Barn of Blood Canadian & U.S. premieres</a>
+      <a href="https://desperate-living.com/2019/03/04/saw-sounds-reinventing-the-texas-chain-saw-massacre-soundtrack/" target="_blank">Desperate Living – Saw Sounds: Texas Chainsaw Massacre Soundtrack</a>
+      <a href="https://grindhousereleasing.com/canada-premiere-scum-of-the-earth-and-the-death-molesters-barn-of-blood/" target="_blank">Grindhouse Releasing – Canadian premiere feature</a>
+      <a href="https://dailydead.com/horror-highlights-scum-of-the-earth-iconic-all-alone-together-recluse/" target="_blank">Daily Dead – Horror Highlights</a>
+      <a href="https://youtu.be/ec_TLBn6V1g?feature=shared" target="_blank">Vinyl review/unboxing – The Shocking Truth (Scare Flair Records)</a>
+    </section>
+
+    <section id="live">
+      <h2>Live & Collaborations</h2>
+      <ul class="live-list">
+        <li>Supported <strong>Public Image Ltd</strong> with Stuart Pearce at Rock City, Nottingham</li>
+        <li>Long-time member of <strong>Shamus Oblivion & the Megadeath Morris Men</strong></li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:officialmarkfoxmusic@gmail.com">officialmarkfoxmusic@gmail.com</a></p>
+      <p>Instagram: <a href="https://instagram.com/mark_fox_music" target="_blank">@mark_fox_music</a></p>
+      <p>YouTube: <a href="https://youtube.com/@mark_fox_music" target="_blank">@mark_fox_music</a></p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Mark Fox. All rights reserved.
+  </footer>
+</body>
+</html>
