@@ -156,4 +156,35 @@
     <li><a href="https://rue-morgue.com/scum-of-the-earth-restoration-and-the-death-molesters-barn-of-blood-set-canadian-u-s-premieres-and-more-poster-trailers/" target="_blank" rel="noopener noreferrer">Rue Morgue Magazine Mention</a></li>
     <li><a href="https://desperate-living.com/2019/03/04/saw-sounds-reinventing-the-texas-chain-saw-massacre-soundtrack/" target="_blank" rel="noopener noreferrer">Desperate Living Review – Texas Chainsaw Massacre Score</a></li>
     <li><a href="https://grindhousereleasing.com/canada-premiere-scum-of-the-earth-and-the-death-molesters-barn-of-blood/" target="_blank" rel="noopener noreferrer">Grindhouse Releasing – Canada Premiere</a></li>
-    <li><a href="https://dailydead.com/horror-highlights-scum-of-the-earth-iconic-all-alone-together-recluse
+    <li><a href="https://dailydead.com/horror-highlights-scum-of-the-earth-iconic-all-alone-together-recluse-2/" target="_blank" rel="noopener noreferrer">Daily Dead – Horror Highlights</a></li>
+    <!-- Add any other press links here -->
+  </ul>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>For enquiries, collaborations, or commissions, please email: <a href="mailto:markfox@example.com">markfox@example.com</a></p>
+  <p>Or find me on <a href="https://www.linkedin.com/in/markfoxcomposer" target="_blank" rel="noopener noreferrer">LinkedIn</a> and <a href="https://twitter.com/markfoxcomposer" target="_blank" rel="noopener noreferrer">Twitter</a>.</p>
+</section>
+
+<footer>
+  <p>© 2025 Mark Fox. All Rights Reserved.</p>
+</footer>
+
+<script>
+  // Scroll to section function for nav buttons
+  function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  }
+
+  // Trailer switcher
+  document.querySelectorAll('.poster').forEach(poster => {
+    poster.addEventListener('click', () => {
+      const trailerURL = poster.getAttribute('data-trailer');
+      document.getElementById('trailerFrame').src = trailerURL;
+    });
+  });
+</script>
+
+</body>
+</html>
